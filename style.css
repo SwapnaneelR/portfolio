@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Bubbles&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+* {
+    margin: 0;
+    padding: 0;
+    
+        overflow-x: hidden;
+    
+}
+/* body{
+    cursor: none;
+} */
+.cursor-dot{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.756);
+    border: solid 2px goldenrod;
+border-radius: 50%;
+position: absolute;
+transition : all linear 0.1s}
+
+/* .cur-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff2ff;
+} */
+/* .cur-outline,.cursor-dot{
+    position :flex;
+    top: 0;
+    left: 0;
+    transform:translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+} */
+.container {
+    display: flex;
+
+}
+.sidebargo{
+    transform: translate(-12vw,0);
+    position: absolute
+}
+.sidebar {
+  
+    background-color: #47535e;
+    color: #fff;
+    width: 12vw;
+    min-height: 100vh;
+    transition: transform 0.3s ease-in;
+    font-family: "Fira Sans", sans-serif;
+
+}
+
+.sidebar nav {
+    display: inline-block;
+    padding: 45px;
+    padding-left: 0;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 15px;
+    padding: 20px;
+    padding-left: 2px;
+
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.main {
+    width:98vw;
+
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(205deg, #0505ae,black, #c60000);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 22% 0%
+    }
+
+    50% {
+        background-position: 79% 100%
+    }
+
+    100% {
+        background-position: 22% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 22% 0%
+    }
+
+    50% {
+        background-position: 79% 100%
+    }
+
+    100% {
+        background-position: 22% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 22% 0%
+    }
+
+    50% {
+        background-position: 79% 100%
+    }
+
+    100% {
+        background-position: 22% 0%
+    }
+}
+
+.main .Info {
+    align-items: center;
+    background-color: #ece9e9;
+    height: 68vh;
+    width: 70vw;
+    overflow: hidden;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5%;
+
+}
+
+.main .Info .hello {
+    justify-content: center;
+
+}
+.main .Info .hello h1{
+    font-size : 10vh;
+}
+.main .Info .hello h2{
+    font-size : 4vh;
+}
+
+.main .Info .picInfo img {
+    margin-left: 0px;
+    height: 68vh;
+    width: 400px;
+}
+
+.main .Info .hello h2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    margin-top: 10px;
+}
+
+#btn1 {
+    margin-top: 20px;
+    margin-left: 100px;
+    background-color: rgb(232, 237, 241);
+    border-radius: 20%;
+    height: 80px;
+    width: 125px;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-color: rgb(68, 4, 4);
+}
+
+#btn1:hover { 
+   transform: scale(1.01);  
+    background-color: rgb(68, 4, 4);
+    color: antiquewhite;
+    transition: all .3s ease;    
+
+}
+/* --------------contact me-------------- */
+#contact {
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    min-height: 100%;
+    width :98vw;
+    overflow: hidden;
+}
+.header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white;
+  }
+  .logo {
+    width:50px;
+    fill:white;
+    padding-right:15px;
+    display:inline-block;
+    vertical-align: middle;
+  }
+  
+  .inner-header {
+    height: 30px;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    min-height:25vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .content {
+    position:fixed;
+    height:10vh;
+    text-align:center;
+    background-color: white;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+}
+.mb-3
+{
+     
+    font: cursive;
+    font-family :'Times New Roman', Times, serif;
+    
+    font-size: 30px;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+}
+.mb-4
+{
+     
+    font: cursive;
+    font-family :'Times New Roman', Times, serif;
+    
+    font-size: 30px;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+}
+#head1{    
+    font-size: 60px;
+    color : rgb(255, 255, 255);
+    font-weight: 900;
+}
+form .btn-primary{
+height: 50px;
+width :60px;
+border-radius: 20%;
+border-style: double;
+color: white;
+background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+}
+/* ---------------------about me------------------ */
+
+.aboutme{
+  display:flex;
+  justify-content: center;
+ padding-bottom: 50px;
+  min-height: 75vh;
+  min-width: 70vw;
+  background: linear-gradient(320deg, #ff48b3, #ec5500);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    -o-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+    padding-top: 100px;
+   
+}
+.aboutme p{
+    font-size: 30px;
+    line-height: 60px;
+  }
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 34%}
+    50%{background-position:100% 67%}
+    100%{background-position:0% 34%}
+}
+
+.aboutsection{
+padding: 25px;  
+display: inline-flexbox;
+ justify-content: center;
+ border-width:2px;
+ border-style:solid;
+ border-color:black;
+border: 6px;
+border-radius: 30px;
+background-color: rgba(250, 235, 215, 0.704);
+width: 70%;
+height: 80%;
+
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    /* background-color: #000218; */
+    color:white;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.foot img{
+   
+    width :33px;
+}
+.foot img:hover{
+    color: #050551;
+}
+/* ----------------edu-------------- */
+.edu{
+    height: 85vh;
+    width: 80.5vw;
+    border: 7.292vw solid rgba(0, 0, 0, 0.873);
+    background-image: url("imgfol/1.jpg");
+    /* background-color: rgb(61, 26, 26); */
+    background-size: 100% 100%;
+    padding: 30px;
+    display: flex;
+    animation : changeImage 20s linear infinite;
+}
+@keyframes changeImage {
+  0%{
+    background-image: url(imgfol/1.jpg);
+  }  
+  25%{
+    background-image: url(imgfol/2.jpg);
+  }
+  50%{
+    background-image: url(imgfol/2.1.jpg);
+  }
+  75%{
+    background-image: url(imgfol/3.jpg);
+  }
+  100%{
+    
+        background-image: url(imgfol/4.jpg);
+      }
+  }
+.t66{
+color: white;
+font-size: 70px;
+
+}
+#rt4{
+height: 60px;
+width: 70px;
+}
+#rt4:hover{
+color:black;
+background: white;
+transform: scale(1.02);
+transition: all .3s ease;    
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Bubbles&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    cursor: none;
+} */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .cursor-dot{
+        visibility: hidden;
+    }
+    .sidebar nav li{
+        font-size: 6.3px;
+    }
+    .main .Info .hello h1{
+        font-size : 5vh;
+        align-items: center;
+    }
+    .main .Info .hello h2{
+        font-size : 2vh;
+    }
+    .picInfo {
+       display: none;
+
+    }
+    #btn1{
+       width: 100px;
+       margin-left: 65px;
+    }
+  .aboutme{
+   
+    height: 80vh;
+  }
+  .aboutme p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #edu{
+    width: 69.5vw
+  }
+  .contactme{
+    width: 69.5vw;
+  }
+
+  
+  }
+
+  
