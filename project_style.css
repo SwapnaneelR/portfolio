@@ -68,13 +68,15 @@ color: rgb(22, 23, 23);margin-left:500px;margin-top: 10px;font-size: 8.2vh;
     } 
 
     #head1{
-        margin-left: 15px;
+        margin-left: 6px;
+        font-size: 7.2vh;
     }
 .proj1 img{
-    width: 50.013699vh;
-    height: 39.53125vw;
-
+    width: 43.013699vh;
+    height: 31.53125vw;
 }
+
+
 #btn2{
     margin-left: 123px;
 }
