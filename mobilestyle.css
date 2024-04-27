@@ -22,8 +22,9 @@
         font-size: 6.3px;
     }
     .main .Info .hello h1{
-        font-size : 5vh;
+        font-size : 4.5vh;
         align-items: center;
+        margin-left: 10px;
     }
     .main .Info .hello h2{
         font-size : 2vh;
@@ -34,7 +35,7 @@
     }
     #btn1{
        width: 100px;
-       margin-left: 65px;
+       margin-left: 53px;
     }
   .aboutme{
    
